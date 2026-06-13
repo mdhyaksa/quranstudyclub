@@ -1,0 +1,266 @@
+HTML
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pra-Kelas QSC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f0eb;
+            color: #2B2B2B;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            color: #4A2C2A;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.6rem;
+            color: #4A2C2A;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #4d241e;
+            border-left: 4px solid #E9A11F;
+            padding-left: 16px;
+            margin: 28px 0;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #D9B691;
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        .diagram-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        @media (min-width: 480px) {
+            .diagram-row.split {
+                flex-direction: row;
+            }
+            .diagram-row.split .card {
+                flex: 1;
+            }
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            color: #ffffff;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+
+        .emerald { background-color: #3E5A44; }
+        .paprika { background-color: #B23A2B; }
+        .midnight { background-color: #2B2B2B; }
+        .gold { background-color: #E9A11F; color: #2B2B2B; }
+        .cocoa { background-color: #4d241e; }
+
+        .arrow {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #4A2C2A;
+            margin: 2px 0;
+            font-weight: bold;
+        }
+
+        .box-worksheet {
+            background-color: #ffffff;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            margin-top: 40px;
+        }
+
+        .box-worksheet h2 {
+            margin-top: 0;
+        }
+
+        .group-field {
+            margin-bottom: 20px;
+        }
+
+        .label-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #4A2C2A;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .text-hint {
+            font-size: 0.88rem;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 90px;
+            padding: 12px;
+            border: 2px solid #D9B691;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #2B2B2B;
+            background-color: #f5f0eb;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #4A2C2A;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>The Self-made Myth: Jebakan Hustle Culture dan Ilusi "Gue Sukses Karena Usaha Sendiri"</h1>
+        
+        <p>Media sosial sering banget mencekoki kita sama narasi kerja keras tanpa henti. Mulai dari konten pamer pencapaian, cerita tidur cuma 4 jam demi nge-grind, sampai klaim kalau semua keberhasilan itu murni hasil keringat sendiri. Dunia modern memang suka mengagungkan mitos kalau manusia bisa sukses sendirian tanpa butuh faktor luar.</p>
+        
+        <p>Kesibukan mengejar target kadang bikin kita lupa ada banyak variabel di luar kendali yang ikut andil. Pas semua urusan lagi lancar, ego kita gampang ngerasa kalau kita adalah bos penuh atas hidup ini dan semua pencapaian bakal bertahan selamanya.</p>
+        
+        <p>Al-Qur'an ngasih sudut pandang lain buat meluruskan pola pikir ini. Lewat kisah dua pemilik kebun di <strong>QS. Al-Kahf: 32–44</strong>, kita bakal melihat gimana ilusi kesuksesan bisa runtuh seketika dan gimana caranya agar kita nggak ikut terjebak di dalamnya.</p>
+
+        <hr>
+
+        <h2>Dua Cara Pandang Pas Lagi Punya Sesuatu</h2>
+        
+        <p>Dalam kisah ini, ada satu orang yang mendapat fasilitas hidup lengkap banget: kebun anggur yang dikelilingi pohon kurma, aliran sungai di tengahnya, dan hasil panen melimpah. Sayangnya, dia gagal paham sama asal-usul modal tersebut. </p>
+        
+        <p>Ulama tafsir Syaikh As-Sa'di dan pemikir Wahiduddin Khan membedah perbedaan kontras antara si pemilik kebun yang pamer dengan temannya yang lurus:</p>
+
+        <div class="diagram-row split">
+            <div class="card paprika">
+                <h3>Ilusi "Gue yang Bangun"</h3>
+                <p>• Pamer harta dan jumlah pengikut.<br>• Anggap asetnya nggak bakal hancur.<br>• Mengira sukses duniawi berarti disayang Tuhan.</p>
+            </div>
+            <div class="card emerald">
+                <h3>Sadar Posisi ("On Loan")</h3>
+                <p>• Ingat asal-usul diri yang cuma dari tanah.<br>• Sadar kalau semua aset cuma pinjaman.<br>• Selalu mengembalikan pujian ke Sang Pemberi.</p>
+            </div>
+        </div>
+
+        <h2>Kesalahan Fatal: Gagal Bedain Ujian dan Hadiah</h2>
+        
+        <p>Si pemilik kebun dengan sombongnya bilang ke temannya, "Harta gue lebih banyak dari lo, dan pengikut gue juga lebih kuat." Dia ngerasa semua kemewahan fisik itu adalah bukti kalau dia hebat dan posisinya bakal aman terus.</p>
+        
+        <blockquote>
+            Wahiduddin Khan menjelaskan kalau kesalahan terbesar orang ini adalah dia nggak bisa membedakan antara dunia sebagai tempat ujian dan dunia sebagai tempat pembalasan. Dia mengira semua materi itu adalah reward atas kehebatannya, padahal itu cuma instrumen tes.
+        </blockquote>
+        
+        <p>Syaikh As-Sa'di juga menambahkan kalau pameran orang ini cuma sebatas bungkus luar yang nggak ada isinya. Kayak anak kecil yang bangga sama angan-angannya sendiri, padahal fondasinya kosong melompong karena hatinya cuma terikat sama materi.</p>
+
+        <h2>Satu Kalimat Penyelamat Aset</h2>
+        
+        <p>Temannya yang bijak langsung ngasih tahu satu resep penting yang sering kita sepelekan pas lagi dapet pencapaian bagus. Harusnya, kalimat yang keluar pertama kali adalah <em>Masha'Allah, la quwwata illa billah</em>.</p>
+
+        <div class="diagram-row">
+            <div class="card midnight">
+                <h3>[ Flexing Tanpa Sumber ]</h3>
+                <p>"Ini hasil kerja keras gue, modal gue, tim gue." Hasilnya: Hati jadi keras dan sombong.</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card gold">
+                <h3>[ Pasang Kalimat Asuransi ]</h3>
+                <p>Mengucapkan "Semua atas kehendak Allah, nggak ada kekuatan kecuali dari-Nya".</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card cocoa">
+                <h3>[ Keberkahan Terjaga ]</h3>
+                <p>Syaikh As-Sa'di menyebutkan kalau mengembalikan pujian ke Allah adalah cara terbaik menjaga nikmat itu tetap awet.</p>
+            </div>
+        </div>
+        
+        <p>Di akhir cerita, semua kebun indah itu habis disapu bersih dalam semalam sampai pemiliknya cuma bisa gigit jari dan meratapi modal yang udah dia tanam. Air yang dia pakai buat menyiram tanaman pun lenyap ambles ke dalam tanah tanpa sisa. Wahiduddin Khan mengingatkan kalau manusia itu rapuh banget; penyakit, musibah, atau umur tua bisa kapan saja mengambil apa yang kita sebut sebagai hak milik kita.</p>
+        
+        <p>Tadabbur mandiri dari ayat ini mengajak kita buat memeriksa ulang daftar pencapaian kita. Apakah kita ngerasa sukses karena murni kehebatan kita sendiri, atau kita sadar kalau tanah yang kita pijak, udara yang kita hirup, dan sisa energi di tubuh kita semuanya adalah fasilitas gratisan yang sewaktu-waktu bisa ditarik kembali?</p>
+
+        <hr>
+
+        <div class="box-worksheet">
+            <h2>🌳 Lembar Refleksi: "The Self-made Myth"</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Yuk, kita luangkan waktu sejenak buat ngisi refleksi ini. Nanti poin-poin ini bakal seru banget buat kita obrolin bareng di kelas.</p>
+            
+            <form>
+                <div class="group-field">
+                    <label class="label-title">1. Memetakan Area "Flexing" Kita</label>
+                    <div class="text-hint">Pencapaian, skill, atau hal apa di hidup kita saat ini yang paling sering bikin kita ngerasa, "Wah, ini bener-bener karena hasil kerja keras gue"?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+                
+                <div class="group-field">
+                    <label class="label-title">2. Membongkar Faktor di Luar Kendali</label>
+                    <div class="text-hint">Dari pencapaian di atas, coba sebutkan minimal 2 hal gratis dari Allah (misal: kesehatan, circle yang support, waktu, kesempatan) yang kalau itu dicabut, usaha kita nggak bakal ada artinya.</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+                
+                <div class="group-field">
+                    <label class="label-title">3. Latihan Mengembalikan Hak Milik</label>
+                    <div class="text-hint">Tulis satu kalimat apresiasi jujur ke Allah atas pencapaian terbesar kita minggu ini, dengan menyertakan kalimat "Masha'Allah, la quwwata illa billah" sebagai bentuk kesadaran kalau kita nggak bisa apa-apa tanpa-Nya.</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
