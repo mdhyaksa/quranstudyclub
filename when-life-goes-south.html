@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pra-Kelas QSC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f0eb;
+            color: #2B2B2B;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            color: #4A2C2A;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.6rem;
+            color: #4A2C2A;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #4d241e;
+            border-left: 4px solid #E9A11F;
+            padding-left: 16px;
+            margin: 28px 0;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #D9B691;
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        .diagram-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        @media (min-width: 480px) {
+            .diagram-row.split {
+                flex-direction: row;
+            }
+            .diagram-row.split .card {
+                flex: 1;
+            }
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            color: #ffffff;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+
+        .emerald { background-color: #3E5A44; }
+        .paprika { background-color: #B23A2B; }
+        .midnight { background-color: #2B2B2B; }
+        .gold { background-color: #E9A11F; color: #2B2B2B; }
+        .cocoa { background-color: #4d241e; }
+
+        .arrow {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #4A2C2A;
+            margin: 2px 0;
+            font-weight: bold;
+        }
+
+        .callout {
+            background-color: #ffffff;
+            border-left: 4px solid #3E5A44;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin: 24px 0;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+        }
+
+        .callout p { margin-bottom: 0; font-size: 0.98rem; }
+
+        .box-worksheet {
+            background-color: #ffffff;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            margin-top: 40px;
+        }
+
+        .box-worksheet h2 {
+            margin-top: 0;
+        }
+
+        .group-field {
+            margin-bottom: 20px;
+        }
+
+        .label-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #4A2C2A;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .text-hint {
+            font-size: 0.88rem;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 90px;
+            padding: 12px;
+            border: 2px solid #D9B691;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #2B2B2B;
+            background-color: #f5f0eb;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #4A2C2A;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>When Life Goes South: Belajar dari Momen Berantakan Nabi Musa as.</h1>
+
+        <p>Satu detik hidup lagi aman-aman aja, detik berikutnya semuanya berantakan, rencana gagal, salah langkah yang susah dibalikin, atau kehilangan hampir semua yang kamu punya dalam sekejap. Kalau kamu lagi di titik itu, kamu nggak sendirian.</p>
+
+        <p>Jauh sebelum kita kenal istilah <em>burnout</em> atau <em>quarter-life crisis</em>, Nabi Musa as. sudah lebih dulu ngerasain hari-hari di mana hidupnya benar-benar "pergi ke selatan" (<em>went south</em>). Kita bedah kisahnya di <strong>QS. Al-Qasas ayat 15-28</strong>.</p>
+
+        <p>Dan buat kamu yang lagi ngerasa buntu banget, satu doa pendek beliau di ayat 24 itu inti dari seluruh cerita ini. Kita simpan di bagian tengah, ya.</p>
+
+        <hr>
+
+        <h2>Dari Punya Segalanya ke Titik Nol</h2>
+
+        <p>Musa as. tumbuh di istana Mesir. Punya <em>power</em>, fasilitas, masa depan cerah. Tapi satu insiden mendadak mengubah semuanya 180 derajat: niat baik nolong kaumnya berujung tak sengaja bikin seseorang tewas dengan satu pukulan.</p>
+
+        <p>Yang menarik, beliau nggak <em>denial</em> atau cari kambing hitam. Beliau langsung <em>owning it</em>: mengakui kesalahannya dan berdoa minta ampun. Dari situ, hidupnya berubah jadi rangkaian fase yang mungkin kerasa familiar buat kita:</p>
+
+        <div class="diagram-row">
+            <div class="card paprika">
+                <h3>1. The Mess</h3>
+                <p>Bikin kesalahan fatal di Mesir. Bukannya nyalahin keadaan, Musa jujur ngakuin dan minta ampun (<em>owning it</em>).</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card midnight">
+                <h3>2. The Anxiety</h3>
+                <p><em>Khayifan yataraqqab</em>, takut sambil waspada, nengok kiri-kanan. Mirip rasa was-was nunggu "bom" yang bisa meledak kapan aja.</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card cocoa">
+                <h3>3. The Reset</h3>
+                <p>Kabur ke Madyan tanpa bekal, tanpa koneksi, tanpa <em>followers</em>. Dari anak istana jadi pelarian, benar-benar <em>zeroed out</em>.</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card emerald">
+                <h3>4. The Service</h3>
+                <p>Meski lapar, haus, dan krisis identitas, beliau tetap bangkit bantu dua perempuan yang kesulitan di sumur. Satu kebaikan kecil pas lagi susah.</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card gold">
+                <h3>5. The Doa</h3>
+                <p>Balik ke tempat teduh, taruh ego di lantai, dan ngomong jujur ke Allah. Di sinilah pintu solusi kebuka.</p>
+            </div>
+        </div>
+
+        <p>Langkah keempat itu menarik. Dalam psikoterapi ada istilah <strong>Behavioral Activation</strong>: kadang cara nyembuhin mental yang lagi berantakan justru dengan ngelakuin satu kebaikan kecil (<em>micro-win</em>) buat orang lain. Bukan nunggu mood pulih dulu, tapi gerak dulu, biar rasa berharga itu pelan-pelan balik.</p>
+
+        <h2>Doa yang Jadi Kunci Segalanya</h2>
+
+        <p>Setelah nolong, Musa as. duduk lagi dan manjatin doa yang jujur banget:</p>
+
+        <blockquote>
+            "Rabbi inni lima anzalta ilayya min khayrin faqir" yang artinya, "Ya Tuhanku, sesungguhnya aku sangat butuh (faqir) akan kebaikan apa pun yang Engkau turunkan padaku." (QS. Al-Qasas: 24)
+        </blockquote>
+
+        <p>Doa ini kelihatan sederhana, tapi dalemnya luar biasa. Ada dua kata yang layak kita renungin pelan-pelan:</p>
+
+        <div class="callout">
+            <p><strong>Anzalta</strong> itu bentuk <em>past tense</em>, "yang <strong>sudah</strong> Engkau turunkan". Di titik terendah, pas ngerasa nggak punya apa-apa lagi, Musa justru mulai dari <strong>mengakui apa yang sudah Allah kasih</strong>, sekecil apa pun itu. Rasa syukur duluan, bukan tuntutan.</p>
+        </div>
+
+        <div class="callout">
+            <p><strong>Khair</strong> punya makna ganda: bisa berarti <strong>barang/kebaikan fisik</strong> (rezeki, makanan, tempat), bisa juga <strong>konsep kebaikan itu sendiri</strong>. Jadi Musa nggak ngedikte Allah minta pekerjaan A atau jodoh B. Beliau cuma minta <strong>kesempatan menerima dan melakukan kebaikan</strong>, apa pun bentuknya yang Allah pilihin.</p>
+        </div>
+
+        <p>Pengakuan "gue nggak bisa apa-apa tanpa-Mu" inilah yang jadi kunci pembuka pintu. Musa berhenti sok kuat, dan justru di situ jawabannya datang.</p>
+
+        <h2>Jawaban yang Datang: Kompeten & Bisa Dipercaya</h2>
+
+        <p>Nggak lama, salah satu perempuan tadi balik lagi, dengan malu-malu (<em>istihya</em>), buat ngundang Musa ketemu ayah mereka. Akhirnya beliau ditawarin kerja dan keluarga baru. Menariknya, alasan beliau direkomendasiin buat dipekerjakan (ayat 26) tetap jadi standar emas dunia profesional sampai sekarang:</p>
+
+        <div class="diagram-row split">
+            <div class="card emerald">
+                <h3>Al-Qawiy (Kompeten)</h3>
+                <p>Kuat dan jago di kerjaannya (<em>hard skill</em>). Musa terbukti sanggup ngangkat batu sumur yang berat.</p>
+            </div>
+            <div class="card cocoa">
+                <h3>Al-Amin (Integritas)</h3>
+                <p>Bisa dipercaya dan punya karakter (<em>soft skill</em>). Beliau sopan dan menjaga pandangan saat berinteraksi.</p>
+            </div>
+        </div>
+
+        <p>Musa nyanggupin kontrak kerja 8-10 tahun. Sepuluh tahun jadi penggembala ini bukan waktu yang kebuang, itu masa Allah ngelatih kesabaran beliau sebelum jadi pemimpin besar. Hidup yang lagi "turun" bukan berarti kamu gagal total; kadang itu justru jalan menuju versi diri yang lebih kuat dan lebih matang.</p>
+
+        <hr>
+
+        <div class="box-worksheet">
+            <h2>⛺ Lembar Refleksi: "When Life Goes South"</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Yuk, isi refleksi ini pelan-pelan sebelum kelas dimulai, biar diskusi kita nanti lebih dalam.</p>
+
+            <form>
+                <div class="group-field">
+                    <label class="label-title">1. Mengakui yang Sudah Ada (Anzalta)</label>
+                    <div class="text-hint">Lagi di fase "kehilangan" apa kamu sekarang? Coba sebutkan satu hal terkecil yang sebenarnya masih Allah kasih ke kamu hari ini.</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">2. Micro-Win Hari Ini (The Service)</label>
+                    <div class="text-hint">Satu kebaikan kecil apa yang bisa kamu lakukan buat orang lain hari ini, meskipun kamu sendiri lagi capek?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">3. Doa Faqir Versi Kamu (Khair)</label>
+                    <div class="text-hint">Tulis ulang doa Musa dengan kata-katamu sendiri, tanpa ngedikte hasilnya. Contoh: "Ya Allah, aku butuh kebaikan apa pun yang Engkau kasih, dan kesempatan buat berbuat baik lewat itu."</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pra-Kelas QSC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f0eb;
+            color: #2B2B2B;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            color: #4A2C2A;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.6rem;
+            color: #4A2C2A;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #4d241e;
+            border-left: 4px solid #E9A11F;
+            padding-left: 16px;
+            margin: 28px 0;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #D9B691;
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        .diagram-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        @media (min-width: 480px) {
+            .diagram-row.split {
+                flex-direction: row;
+            }
+            .diagram-row.split .card {
+                flex: 1;
+            }
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            color: #ffffff;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+
+        .emerald { background-color: #3E5A44; }
+        .paprika { background-color: #B23A2B; }
+        .midnight { background-color: #2B2B2B; }
+        .gold { background-color: #E9A11F; color: #2B2B2B; }
+        .cocoa { background-color: #4d241e; }
+
+        .arrow {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #4A2C2A;
+            margin: 2px 0;
+            font-weight: bold;
+        }
+
+        /* Concept-mapping table */
+        .map-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            margin: 24px 0;
+        }
+
+        .map-table td {
+            padding: 14px 16px;
+            font-size: 0.95rem;
+            vertical-align: top;
+        }
+
+        .map-table .col-quran {
+            background-color: #3E5A44;
+            color: #ffffff;
+            font-weight: 700;
+            border-radius: 10px 0 0 10px;
+            width: 42%;
+        }
+
+        .map-table .col-now {
+            background-color: #ffffff;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 2px 8px rgba(74, 44, 42, 0.05);
+        }
+
+        .box-worksheet {
+            background-color: #ffffff;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            margin-top: 40px;
+        }
+
+        .box-worksheet h2 {
+            margin-top: 0;
+        }
+
+        .group-field {
+            margin-bottom: 20px;
+        }
+
+        .label-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #4A2C2A;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .text-hint {
+            font-size: 0.88rem;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 90px;
+            padding: 12px;
+            border: 2px solid #D9B691;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #2B2B2B;
+            background-color: #f5f0eb;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #4A2C2A;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>The Courage to Question: Menemukan Nalar di Balik Tradisi</h1>
+
+        <p>Bayangin sebuah kota yang tiap sudutnya penuh "papan iklan" berupa patung. Di Babilonia, patung-patung batu ini bukan cuma urusan agama, tapi identitas sosial sekaligus mesin ekonomi. Ibrahim as. lahir tepat di inti sistem ini, ayahnya, Azar, adalah si pembuat patung.</p>
+
+        <p>Sejak kecil, Ibrahim adalah seorang <em>perceiver</em> (pengamat) yang tajam. Pas anak-anak lain menjadikan patung sebagai mainan tanpa mikir, Ibrahim justru ngelihat ada <em>error</em> dalam logika masyarakatnya. Kita bedah keberanian beliau bertanya di <strong>QS. Al-Anbiya ayat 63</strong>.</p>
+
+        <hr>
+
+        <h2>Dua Cara Menyikapi "Yang Sudah Dari Dulu"</h2>
+
+        <p>Konfrontasi pertama Ibrahim mulai dari pertanyaan yang kelihatan polos tapi mematikan: "Patung apa ini yang kalian tekun sembah?" Jawaban kaumnya adalah potret klasik kepatuhan buta.</p>
+
+        <div class="diagram-row split">
+            <div class="card paprika">
+                <h3>Blind Compliance</h3>
+                <p>"Kami dapati nenek moyang kami menyembahnya." Bagi mereka, kebenaran nggak butuh bukti, cukup butuh durasi. Selama udah dilakuin dari dulu, dianggap benar.</p>
+            </div>
+            <div class="card emerald">
+                <h3>The Critical Perceiver</h3>
+                <p>Ibrahim nanya: "Kenapa nyembah sesuatu yang nggak denger, nggak lihat, dan nggak ngasih manfaat apa-apa?" Berani mempertanyakan, bukan sekadar ngikut.</p>
+            </div>
+        </div>
+
+        <h2>Eksperimen Sosial di Kuil yang Sepi</h2>
+
+        <p>Ibrahim sadar, debat lisan doang nggak cukup buat ngeruntuhin tembok dogma. Beliau butuh "bukti praktis". Pas hari raya besar dan seluruh kota pergi berfestival, Ibrahim sengaja tinggal. Di kuil yang sunyi, beliau ngancurin semua berhala kecil, tapi nyisain yang paling besar, dan naruh kapaknya di tangan si berhala terbesar.</p>
+
+        <p>Pas penduduk balik dan dapetin tuhan-tuhan mereka hancur, mereka murka. Ibrahim dibawa ke pengadilan publik. Saat ditanya apa dia pelakunya, beliau jawab dengan teknik ironi:</p>
+
+        <blockquote>
+            "Sebenarnya patung besar itu yang melakukannya, maka tanyakanlah kepada mereka, jika mereka dapat berbicara." (QS. Al-Anbiya: 63)
+        </blockquote>
+
+        <p>Ini bukan bohong, tapi <strong>Logical Trap</strong> (jebakan logika). Ibrahim seolah bilang: "Kalau kalian ngeklaim mereka tuhan yang berkuasa, bukannya masuk akal kalau si besar ini cemburu dan ngancurin saingannya? Tanya aja mereka!"</p>
+
+        <div class="diagram-row">
+            <div class="card midnight">
+                <h3>1. Logical Trap Dipasang</h3>
+                <p>Pertanyaan Ibrahim maksa kaumnya mikir sendiri, memaksa mereka berhadapan dengan logika mereka yang bolong.</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card gold">
+                <h3>2. Cognitive Dissonance</h3>
+                <p>Muncul ketidaknyamanan mental. Sesaat mereka sadar: patung mati ini emang nggak bisa apa-apa.</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card cocoa">
+                <h3>3. "Kembali ke Diri Sendiri"</h3>
+                <p>Al-Qur'an nyatet: "Maka mereka kembali kepada diri mereka sendiri..." (ayat 64). Sesaat sadar mereka sendiri yang zalim, walau ego bikin mereka balik lagi ke pola lama.</p>
+            </div>
+        </div>
+
+        <h2>"Berhala" Kita Zaman Sekarang</h2>
+
+        <p>Buat kita, "berhala" mungkin udah nggak berbentuk batu di kuil. Tapi ada bentuk lain yang sama-sama nuntut kepatuhan buta. Konsep di kisah Ibrahim ternyata punya padanan yang pas banget sama realita sekarang:</p>
+
+        <table class="map-table">
+            <tr>
+                <td class="col-quran">Tradisi Nenek Moyang</td>
+                <td class="col-now">Algoritma &amp; <em>filter bubble</em>, ngikut apa yang lagi viral cuma karena "semua orang juga gitu".</td>
+            </tr>
+            <tr>
+                <td class="col-quran">Tamathil (Patung)</td>
+                <td class="col-now"><em>Curated feed</em> &amp; <em>personal branding</em> palsu, citra yang dipoles buat dipamerin, bukan yang asli.</td>
+            </tr>
+            <tr>
+                <td class="col-quran">Isnad Majazi (Ironi)</td>
+                <td class="col-now"><em>Critical thinking</em> &amp; <em>fact-checking</em>, berani ngecek ulang di tengah hoaks dan tekanan FOMO.</td>
+            </tr>
+        </table>
+
+        <p>Ibrahim ngajak kita nanya: "Apakah citra di layar ini bener-bener ngasih manfaat buat aku?" Keberanian buat peduli sama kebenaran harus ngelewatin rasa takut dianggap aneh atau <em>cringe</em> sama publik.</p>
+
+        <p>Keberanian bertanya adalah langkah pertama menuju iman yang otentik. Ibrahim as. ngebuktiin kalau nalar dan wahyu itu bukan musuh, melainkan kawan dalam nyari kebenaran. Jangan takut jadi "berbeda" kalau itu demi kebenaran.</p>
+
+        <hr>
+
+        <div class="box-worksheet">
+            <h2>❓ Lembar Refleksi: "The Courage to Question"</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Yuk, isi refleksi ini pakai metode SQ3R sebelum kelas dimulai, biar diskusi kita nanti lebih dalam.</p>
+
+            <form>
+                <div class="group-field">
+                    <label class="label-title">1. Ngenalin "Berhala" Kamu</label>
+                    <div class="text-hint">Apa satu tren, kebiasaan, atau citra digital yang selama ini kamu bela cuma karena "dari dulu emang gini" atau "semua orang juga gitu"?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">2. Kepoin Ayatnya (Question)</label>
+                    <div class="text-hint">Tulis minimal 3 pertanyaan kritis buat dirimu sendiri. Contoh: "Apa 'berhala' yang paling sering aku bela sekarang?"</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">3. Action Plan (Review)</label>
+                    <div class="text-hint">Satu hal apa yang mau kamu ubah hari ini? Berhenti ngikutin tren yang nggak sehat, atau berani berpendapat jujur meski nggak populer?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

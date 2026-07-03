@@ -6,7 +6,7 @@
     <title>Materi Pra-Kelas QSC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -16,7 +16,7 @@
         }
         .container { max-width: 1080px; margin: 0 auto; }
 
-        .masthead { text-align: center; margin-bottom: 40px; }
+        .masthead { text-align: center; margin-bottom: 48px; }
         .masthead .kicker {
             font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;
             color: #B23A2B; font-weight: 700; margin-bottom: 8px;
@@ -27,18 +27,23 @@
         }
         .masthead p { color: #555; margin-top: 12px; }
 
-        /* Responsive card grid: 3-up desktop, reflow tablet, 1-up mobile */
+        /* Batch section grouping */
+        .batch { margin-bottom: 48px; }
+        .batch-heading { margin-bottom: 20px; }
+        .batch-kicker {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px;
+            font-weight: 800; color: #B23A2B;
+            border-bottom: 3px solid #E9A11F; padding-bottom: 4px;
+        }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
 
-        /* All cards identical — calm white surface, no per-card color.
-           Cartoonish: thick dark outline, chunky rounded corners, and a HARD
-           offset "sticker" shadow. A big emoji badge fills the top so content
-           reads top-to-bottom with no dead whitespace. Height is driven by
-           content (grid stretches all cards equal), NOT a forced tall ratio. */
         .card {
             display: flex; flex-direction: column; align-items: flex-start;
             gap: 13px;
@@ -47,14 +52,13 @@
             padding: 24px 22px;
             border: 3px solid #4A2C2A;
             border-radius: 20px;
-            box-shadow: 7px 7px 0 #4A2C2A;     /* hard cartoon drop shadow */
+            box-shadow: 7px 7px 0 #4A2C2A;
             transition: transform 0.18s ease, box-shadow 0.18s ease;
         }
         .card:hover {
             transform: translate(-3px, -3px);
-            box-shadow: 10px 10px 0 #E9A11F;   /* shadow pops gold + grows */
+            box-shadow: 10px 10px 0 #E9A11F;
         }
-
         .card .badge {
             width: 60px; height: 60px; border-radius: 50%;
             background-color: #f5f0eb;
@@ -71,15 +75,9 @@
             font-size: 1.35rem; line-height: 1.2; color: #4A2C2A;
         }
         .card p { font-size: 0.9rem; color: #555; }
-        .card .cta {
-            margin-top: auto;                  /* push CTA to the bottom edge */
-            font-weight: 800; font-size: 0.88rem; color: #4A2C2A;
-        }
+        .card .cta { margin-top: auto; font-weight: 800; font-size: 0.88rem; color: #4A2C2A; }
 
-        /* On very narrow phones drop the strict portrait ratio so text never clips */
-        @media (max-width: 360px) {
-            .card { aspect-ratio: auto; }
-        }
+        @media (max-width: 360px) { .card { aspect-ratio: auto; } }
     </style>
 </head>
 <body>
@@ -87,34 +85,64 @@
         <header class="masthead">
             <div class="kicker">Materi Pra-Kelas</div>
             <h1>Quran Study Club</h1>
-            <p>Tiga bacaan ringan buat nemenin kamu sebelum kelas dimulai.</p>
+            <p>Bacaan ringan buat nemenin kamu sebelum kelas dimulai.</p>
         </header>
 
-        <div class="grid">
-            <a class="card" href="shake-the-tree.html">
-                <span class="badge" aria-hidden="true">🌳</span>
-                <span class="tag">Refleksi &middot; Burnout</span>
-                <h2>Lagi Burnout Parah? Belajar dari Cara Maryam Menghadapi Titik Terendah</h2>
-                <p>Functional freeze, microsteps, dan "shake the tree" ala QS. Maryam.</p>
-                <span class="cta">Baca sekarang &rarr;</span>
-            </a>
+        <!-- ===== BATCH 3 (existing) — TOP ROW ===== -->
+        <section class="batch">
+            <h2 class="batch-heading"><span class="batch-kicker">Batch 3</span></h2>
+            <div class="grid">
+                <a class="card" href="shake-the-tree.html">
+                    <span class="badge" aria-hidden="true">🌳</span>
+                    <span class="tag">Refleksi &middot; Burnout</span>
+                    <h2>Lagi Burnout Parah? Belajar dari Cara Maryam Menghadapi Titik Terendah</h2>
+                    <p>Functional freeze, microsteps, dan "shake the tree" ala QS. Maryam.</p>
+                    <span class="cta">Baca sekarang &rarr;</span>
+                </a>
+                <a class="card" href="i-believe-but-show-me-anyway.html">
+                    <span class="badge" aria-hidden="true">🔍</span>
+                    <span class="tag">Iman &middot; Bukti</span>
+                    <h2>I Believe but Show me Anyway: Nyari Bukti Otentik Biar Hati Tenang</h2>
+                    <p>Saat otak sudah percaya tapi hati masih ganjal.</p>
+                    <span class="cta">Baca sekarang &rarr;</span>
+                </a>
+                <a class="card" href="the-self-made-myth.html">
+                    <span class="badge" aria-hidden="true">💪</span>
+                    <span class="tag">Sosial &middot; Hustle Culture</span>
+                    <h2>The Self-made Myth: Jebakan Ilusi "Gue Sukses Karena Usaha Sendiri"</h2>
+                    <p>Bongkar narasi hustle culture tanpa henti.</p>
+                    <span class="cta">Baca sekarang &rarr;</span>
+                </a>
+            </div>
+        </section>
 
-            <a class="card" href="i-believe-but-show-me-anyway.html">
-                <span class="badge" aria-hidden="true">🔍</span>
-                <span class="tag">Iman &middot; Bukti</span>
-                <h2>I Believe but Show me Anyway: Nyari Bukti Otentik Biar Hati Tenang</h2>
-                <p>Saat otak sudah percaya tapi hati masih ganjal.</p>
-                <span class="cta">Baca sekarang &rarr;</span>
-            </a>
-
-            <a class="card" href="the-self-made-myth.html">
-                <span class="badge" aria-hidden="true">💪</span>
-                <span class="tag">Sosial &middot; Hustle Culture</span>
-                <h2>The Self-made Myth: Jebakan Ilusi "Gue Sukses Karena Usaha Sendiri"</h2>
-                <p>Bongkar narasi hustle culture tanpa henti.</p>
-                <span class="cta">Baca sekarang &rarr;</span>
-            </a>
-        </div>
+        <!-- ===== BATCH 2 (new, older content) — BELOW ===== -->
+        <section class="batch">
+            <h2 class="batch-heading"><span class="batch-kicker">Batch 2</span></h2>
+            <div class="grid">
+                <a class="card" href="when-life-goes-south.html">
+                    <span class="badge" aria-hidden="true">⛺</span>
+                    <span class="tag">Krisis &middot; Bangkit dari Nol</span>
+                    <h2>When Life Goes South: Belajar dari Momen Berantakan Nabi Musa</h2>
+                    <p>Pas kehilangan semua, syukuri hal terkecil & minta kesempatan berbuat baik.</p>
+                    <span class="cta">Baca sekarang &rarr;</span>
+                </a>
+                <a class="card" href="the-anchor.html">
+                    <span class="badge" aria-hidden="true">⚓</span>
+                    <span class="tag">Stabilitas &middot; Iman</span>
+                    <h2>The Anchor: Jadi Pohon yang Baik yang Nggak Gampang Tumbang</h2>
+                    <p>Akar dalam, menjulang ke Allah, berbuah buat sekitar.</p>
+                    <span class="cta">Baca sekarang &rarr;</span>
+                </a>
+                <a class="card" href="the-courage-to-question.html">
+                    <span class="badge" aria-hidden="true">❓</span>
+                    <span class="tag">Nalar &middot; Tradisi</span>
+                    <h2>The Courage to Question: Menemukan Nalar di Balik Tradisi</h2>
+                    <p>Berani nanya di tengah kepatuhan buta.</p>
+                    <span class="cta">Baca sekarang &rarr;</span>
+                </a>
+            </div>
+        </section>
     </div>
 </body>
 </html>

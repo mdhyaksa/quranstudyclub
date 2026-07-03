@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pra-Kelas QSC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f0eb;
+            color: #2B2B2B;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            color: #4A2C2A;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.6rem;
+            color: #4A2C2A;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #4d241e;
+            border-left: 4px solid #E9A11F;
+            padding-left: 16px;
+            margin: 28px 0;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #D9B691;
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        .diagram-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        @media (min-width: 480px) {
+            .diagram-row.split {
+                flex-direction: row;
+            }
+            .diagram-row.split .card {
+                flex: 1;
+            }
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            color: #ffffff;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+
+        .emerald { background-color: #3E5A44; }
+        .paprika { background-color: #B23A2B; }
+        .midnight { background-color: #2B2B2B; }
+        .gold { background-color: #E9A11F; color: #2B2B2B; }
+        .cocoa { background-color: #4d241e; }
+
+        /* Tree spine: reversed flow (roots at bottom → sky at top) */
+        .arrow {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #4A2C2A;
+            margin: 2px 0;
+            font-weight: bold;
+        }
+
+        .callout {
+            background-color: #ffffff;
+            border-left: 4px solid #3E5A44;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin: 24px 0;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+        }
+
+        .callout p { margin-bottom: 0; font-size: 0.98rem; }
+
+        .box-worksheet {
+            background-color: #ffffff;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            margin-top: 40px;
+        }
+
+        .box-worksheet h2 {
+            margin-top: 0;
+        }
+
+        .group-field {
+            margin-bottom: 20px;
+        }
+
+        .label-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #4A2C2A;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .text-hint {
+            font-size: 0.88rem;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 90px;
+            padding: 12px;
+            border: 2px solid #D9B691;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #2B2B2B;
+            background-color: #f5f0eb;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #4A2C2A;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>The Anchor: Jadi Pohon yang Baik yang Nggak Gampang Tumbang</h1>
+
+        <p>Dunia rasanya berubah kecepetan sampai capek sendiri ngikutinnya. Masalah datang silih berganti, berita buruk di mana-mana, dan susah banget buat sekadar merasa tenang. Para ahli nyebut zaman sekarang sebagai era <em>Pain, Uncertainty, and Chaos</em> (PUC), masa yang penuh luka, ketidakpastian, dan kekacauan.</p>
+
+        <p>Di tengah badai kayak gini, kita semua butuh "jangkar" biar nggak hanyut. Dan stabil itu bukan berarti hidup lurus-lurus aja tanpa masalah. Stabil yang sebenarnya adalah kemampuan buat tetap tenang di dalam, meskipun di luar lagi berisik banget.</p>
+
+        <p>Di <strong>QS. Ibrahim ayat 24-25</strong>, Allah kasih kita satu perumpamaan yang simpel tapi dalem: jadilah seperti <strong>pohon yang baik</strong>.</p>
+
+        <hr>
+
+        <h2>Anatomi Pohon yang Baik</h2>
+
+        <p>Di ayat 24, Allah ngajak kita berhenti sejenak: "Tidakkah kamu perhatikan..." (<em>alam tara</em>). Bukan cuma lewat, tapi bener-bener merhatiin. Allah ngibaratkan kalimat baik (kayak <em>La ilaha illallah</em>) seperti pohon yang baik, banyak ulama bilang ini pohon kurma, karena daunnya nggak gampang gugur dan manfaatnya banyak.</p>
+
+        <p>Coba kita baca pohon ini dari bawah ke atas, dari yang nggak kelihatan sampai yang berbuah:</p>
+
+        <div class="diagram-row">
+            <div class="card gold">
+                <h3>🍇 Buah tiap Musim (Tu'ti ukulaha kulla hin)</h3>
+                <p>Berbuah "di setiap waktu", bukan cuma pas lagi mood atau lagi lapang. Manfaatnya buat sekitar terus ngalir, karena bergerak atas izin Allah (<em>bi-idzni rabbiha</em>), bukan cari pujian manusia.</p>
+            </div>
+            <div class="arrow">▲</div>
+            <div class="card emerald">
+                <h3>🌿 Dahan Menjulang (Far'uha fis-Sama')</h3>
+                <p>Dahannya tumbuh tinggi ke arah langit, ke arah Allah. Iman nggak bikin kita nutup diri; justru bikin cita-cita tinggi karena standar kita standar langit, bukan standar manusia yang gampang berubah.</p>
+            </div>
+            <div class="arrow">▲</div>
+            <div class="card cocoa">
+                <h3>🪵 Akar Menghujam (Ashluha Thabit)</h3>
+                <p>Akar yang dalam dan kokoh, inilah sang jangkar. Tauhid dan prinsip yang menancap di hati, yang nggak kelihatan orang tapi nentuin kamu tumbang atau nggak pas badai datang.</p>
+            </div>
+        </div>
+
+        <p>Urutannya penting. <strong>Akar dulu.</strong> Karena akar yang dalam itu yang bikin dahan berani menjulang tinggi, dan justru dari akar + dahan yang sehat itulah buahnya bisa lahir buat sekitar. Bukan kebalik: kita nggak bisa maksa berbuah kalau akarnya rapuh.</p>
+
+        <blockquote>
+            Orang yang imannya stabil nggak berhenti berbuat baik cuma pas lagi senang. Mau susah, mau sedih, dia tetap kasih manfaat, karena akarnya di tempat yang tepat.
+        </blockquote>
+
+        <h2>Belum Berbuah? Tetap Bisa Bermanfaat</h2>
+
+        <p>Ini bagian yang sering kelewat. Nggak semua pohon berbuah, tapi pohon yang nggak berbuah pun tetap ngasih manfaat dengan cara lain: jadi tempat berteduh, kayunya kepakai, jadi rumah buat burung, nahan tanah dari longsor.</p>
+
+        <div class="callout">
+            <p>Jadi "bermanfaat" itu banyak bentuknya. Kamu nggak harus selalu punya "buah" yang keliatan buat dianggap berguna. Yang wajib dan konstan cuma dua: <strong>akar yang dalam</strong> dan <strong>terus menjulang ke Allah</strong>. Bentuk manfaatnya, biar Allah yang atur.</p>
+        </div>
+
+        <h2>Lawannya: Pohon yang Buruk</h2>
+
+        <p>Di ayat 26, Allah kasih perbandingan: pohon buruk (<em>shajarah khabithah</em>). Ini gambaran orang yang hidupnya nggak punya pegangan atau cuma ikut-ikutan tren.</p>
+
+        <div class="diagram-row split">
+            <div class="card emerald">
+                <h3>Pohon yang Baik</h3>
+                <p>Akar dalam, dahan menjulang, manfaat ngalir tiap musim. Tetap tegak walau angin kencang.</p>
+            </div>
+            <div class="card paprika">
+                <h3>Pohon yang Buruk</h3>
+                <p>Tercabut dari bumi, nggak punya keteguhan. Dari luar mungkin gede atau mewah, tapi begitu ada masalah, langsung tumbang karena nggak punya akar prinsip.</p>
+            </div>
+        </div>
+
+        <p>Tadabbur mandiri dari ayat ini ngajak kita ngecek: sebenarnya apa sih yang jadi "akar" hidup kita sekarang? Kerjaan? Validasi orang? Atau bener-bener Allah? Karena Allah nggak pernah berubah meskipun dunia lagi kacau, dan itulah kenapa Dia layak jadi jangkar kita.</p>
+
+        <hr>
+
+        <div class="box-worksheet">
+            <h2>⚓ Lembar Refleksi: "The Anchor"</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Yuk, luangkan waktu sejenak ngisi refleksi ini sebelum kelas dimulai, biar diskusi kita nanti lebih dalam.</p>
+
+            <form>
+                <div class="group-field">
+                    <label class="label-title">1. Ngecek "Akar" Kamu (Ashluha Thabit)</label>
+                    <div class="text-hint">Sejujurnya, apa yang jadi "akar" hidup kamu sekarang, hal yang bikin kamu tetap tegak pas semuanya lagi goyang?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">2. "Menjulang ke Langit" (Far'uha fis-Sama')</label>
+                    <div class="text-hint">Satu cara kecil apa yang bisa kamu lakukan hari ini buat "menjulang ke Allah", mendekat, bukan menjauh?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">3. Bentuk Manfaat Kamu (Buah atau Teduh)</label>
+                    <div class="text-hint">Satu manfaat apa yang bisa kamu kasih ke sekitar, entah itu "buah" (kontribusi nyata) atau sekadar "teduh" (hadir, dengerin, nemenin)?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
