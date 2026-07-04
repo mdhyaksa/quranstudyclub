@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pra-Kelas QSC</title>
+    <link rel="icon" type="image/png" href="qsc-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #717b5e;
+            color: #F9F9F6;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            color: #ffead1;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.6rem;
+            color: #ffead1;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #ffead1;
+            border-left: 4px solid #ffead1;
+            padding-left: 16px;
+            margin: 28px 0;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #acb59a;
+            margin: 40px 0;
+            opacity: 0.7;
+        }
+
+        .diagram-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        @media (min-width: 480px) {
+            .diagram-row.split {
+                flex-direction: row;
+            }
+            .diagram-row.split .card {
+                flex: 1;
+            }
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            color: #ffffff;
+            border: 1.5px solid rgba(249, 249, 246, 0.25);
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+
+        .emerald { background-color: #2E3326; }
+        .paprika { background-color: #ab875f; }
+        .midnight { background-color: #2E3326; }
+        .gold { background-color: #acb59a; color: #2E3326; }
+        .cocoa { background-color: #2E3326; }
+
+        .arrow {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #ffead1;
+            margin: 2px 0;
+            font-weight: bold;
+        }
+
+        .box-worksheet {
+            background-color: #ffead1;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            margin-top: 40px;
+        }
+
+        .box-worksheet h2 {
+            color: #2E3326;
+            margin-top: 0;
+        }
+
+        .group-field {
+            margin-bottom: 20px;
+        }
+
+        .label-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #4A3728;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .text-hint {
+            font-size: 0.88rem;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 90px;
+            padding: 12px;
+            border: 2px solid #acb59a;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #2E3326;
+            background-color: #F9F9F6;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #4A3728;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>The Power of Iqra: Kenapa Wahyu Pertama Nyuruh Kita "Baca", Bukan Sembah</h1>
+
+        <p>Coba bayangin momen paling penting dalam sejarah manusia: wahyu pertama turun di Gua Hira. Kita mungkin nebak perintah pembukanya soal ibadah, sujud, atau puasa. Ternyata meleset. Kata pertama yang Allah turunin ke Nabi Muhammad SAW lewat Malaikat Jibril adalah <em>Iqra</em>. Baca.</p>
+
+        <p>Buat kita yang tiap hari scroll ratusan postingan, baca caption, dan nonton reels, kata itu kerasa biasa banget. Padahal kalau dipikir-pikir agak ganjil juga. Sebuah agama dibuka dengan ajakan buat membaca dan menyelidiki, sebelum ngomongin ritual apa pun.</p>
+
+        <p>Dan buat generasi yang punya akses informasi paling melimpah sepanjang sejarah, justru di situ letak PR-nya.</p>
+
+        <hr>
+
+        <h2>Iqra Itu Lebih dari Sekadar Mengeja</h2>
+
+        <p>Akar kata <em>qara'a</em> nggak berhenti di "membaca huruf". Maknanya lebih ke menghimpun, mengumpulkan informasi dari banyak sumber, lalu menyusunnya jadi satu pemahaman yang utuh. Jadi Iqra itu kerjaan aktif: mengamati, nyari tahu, terus memverifikasi.</p>
+
+        <p>Yang menarik, di ayat itu objek "apa yang harus dibaca" sengaja nggak disebutin. Menurut ahli tafsir Quraish Shihab, itu memang disengaja biar cakupannya seluas mungkin. Yang dibaca bukan cuma teks di mushaf, tapi juga alam semesta, fenomena sosial di sekitar kita, sampai kondisi diri sendiri.</p>
+
+        <p>Artinya tiap kali kamu penasaran gimana sesuatu bekerja, atau berhenti sejenak buat ngerti kenapa kamu ngerasain sesuatu, itu semua udah masuk ke dalam semangat Iqra.</p>
+
+        <h2>Kok Berpikir Kritis Malah Bisa Nguatin Iman?</h2>
+
+        <p>Sering ada anggapan kalau iman dan nalar itu dua kubu yang berantem. Kebanyakan nanya, katanya imanmu lagi goyah. Al-Qur'an justru ngambil posisi sebaliknya. Ayat-ayatnya berkali-kali ngajak manusia mikir, ngamatin, dan malah nyindir orang yang cuma ikut-ikutan tanpa alasan yang jelas.</p>
+
+        <p>Al-Qur'an mendokumentasikan orang yang nolak kebenaran dengan alasan "ini yang kami warisi dari nenek moyang kami". Kedengeran familiar? Itu versi lawas dari kalimat "ya dari dulu aku emang gini kok".</p>
+
+        <p>Tapi ada satu syarat yang gampang kelewat. Perhatiin ayat pertamanya. Allah nggak cuma bilang "Baca", ada lanjutannya: "dengan nama Tuhanmu" (<em>bismi rabbika</em>). Nalar kita disuruh jalan sambil megang satu niat, yaitu nyari kebenaran biar makin kenal sama yang menciptakan. Di titik itulah berpikir kritis berubah jadi pintu masuk menuju iman, bukan pintu keluar darinya.</p>
+
+        <p>Makanya ayat keduanya langsung ngingetin asal-usul kita yang sederhana, cuma dari segumpal <em>'alaq</em>. Biar pas ilmu kita nambah, kepala kita nggak keburu membesar. Ilmuwan Muslim seperti Ibn al-Haytham, yang dikenal sebagai bapak metode ilmiah, malah ngeliat eksperimen di lab sebagai bentuk ibadah, cara buat mengagumi rancangan Tuhan yang detail.</p>
+
+        <blockquote>
+            Iqra' bismi Rabbika alladzi khalaq. Khalaqal-insana min 'alaq. Iqra' wa Rabbukal-akram. Alladzi 'allama bil-qalam. 'Allamal-insana ma lam ya'lam.
+        </blockquote>
+
+        <p style="font-size: 0.9rem; opacity: 0.85;">Transliterasi QS. Al-'Alaq: 1-5, dikutip dari materi bacaan.</p>
+
+        <p>Kalau kita runut pesannya pelan-pelan: mulai belajar dengan sadar siapa sumber ilmunya (ayat 1), inget kita ini asalnya kecil biar nggak sombong (ayat 2), yakin bahwa proses nyari ilmu itu dimudahin sama Yang Maha Pemurah (ayat 3), hargain pena sebagai alat buat mencatat dan memverifikasi (ayat 4), dan percaya selalu ada hal baru yang bisa ditemuin, karena Dia yang ngajarin manusia hal yang sebelumnya nggak diketahui (ayat 5).</p>
+
+        <h2>Masalahnya: Niat yang Keruh Bikin Nalar Belok</h2>
+
+        <p>Di sinilah bagian yang jarang kita sadari. Alat berpikir yang sama persis bisa dipakai buat nyari kebenaran, bisa juga dipakai buat mbenerin ego. Pembedanya cuma satu: niat.</p>
+
+        <p>Sering kali kita ngerasa lagi "mikir kritis", padahal aslinya lagi nyari pembenaran. Kita baca sesuatu buat cari amunisi biar menang debat, biar keliatan pinter, atau buat nenangin rasa kesel. Pas niatnya udah begitu, logika kita berhenti jadi kompas dan berubah jadi pengacara yang belain apa pun yang udah kita percaya dari awal.</p>
+
+        <div class="diagram-row split">
+            <div class="card emerald">
+                <h3>Baca Sama Rabb</h3>
+                <p>Niatnya nyari kebenaran. Siap ngaku salah kalau ternyata keliru. Makin banyak tahu, makin ngerasa kecil dan makin kenal sama yang bikin semuanya.</p>
+            </div>
+            <div class="card paprika">
+                <h3>Baca Sama Ego</h3>
+                <p>Niatnya nyari menang dan validasi. Cuma nyomot info yang cocok sama opini sendiri. Makin banyak baca, makin keras kepala.</p>
+            </div>
+        </div>
+
+        <h2>Contoh Paling Nyata: Timeline Kita Sendiri</h2>
+
+        <p>Nggak usah jauh-jauh nyari contohnya. Lihat aja gimana hoaks bisa nyebar cepet banget. Kebanyakan misinformasi sengaja didesain buat mancing emosi kuat, entah marah, takut, atau kaget. Alasannya simpel: pas emosi kita kepancing, nalar kritis kita otomatis ke-skip.</p>
+
+        <p>Kita nge-share sesuatu sering kali karena kontennya "kena" di perasaan atau cocok sama yang udah kita yakini, bukan karena udah dicek dulu benernya. Itu contoh Iqra yang niatnya udah keruh. Kita baca buat validasi, bukan buat verifikasi.</p>
+
+        <p>Al-Qur'an sebenernya udah ngasih rem buat momen kayak gini lewat konsep <em>tabayyun</em>, yaitu ngecek dulu sebelum percaya dan sebelum nyebarin. Islam dengan tegas ngelarang kita ngikutin sesuatu tanpa ilmu yang jelas.</p>
+
+        <h2>Rem Dulu Sebelum Percaya: P.A.C.E</h2>
+
+        <p>Biar Iqra kita nggak kebajak emosi, coba jalanin empat langkah kecil ini tiap ketemu berita atau konten yang bikin pengen langsung bereaksi.</p>
+
+        <div class="diagram-row">
+            <div class="card paprika">
+                <h3>P — Pause</h3>
+                <p>Berhenti sebentar sebelum reply atau share. Kasih jeda buat emosi turun dulu.</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card midnight">
+                <h3>A — Ask</h3>
+                <p>Kenapa aku kepancing sereaksi ini? Apa sih bukti pendukungnya, dan dari mana sumbernya?</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card cocoa">
+                <h3>C — Curiosity</h3>
+                <p>Siapa yang diuntungin dari kabar ini? Gimana kira-kira argumen dari sisi seberang?</p>
+            </div>
+            <div class="arrow">▼</div>
+            <div class="card gold">
+                <h3>E — Engage</h3>
+                <p>Baru kasih respons, dan dasarnya bukti yang nyata, bukan emosi sesaat.</p>
+            </div>
+        </div>
+
+        <p>Intinya P.A.C.E ini bukan cuma soal cek fakta, tapi juga cek niat. Sebelum jarimu gerak buat nyebarin, tanya ke diri sendiri: aku nyebarin ini demi kebenaran, atau demi egoku?</p>
+
+        <p>Ngecek sebelum percaya ternyata bukan sekadar urusan melek digital. Buat seorang Muslim, itu amanah, tanggung jawab yang nanti bakal ditanyain juga. Dan semuanya balik lagi ke kata pertama tadi. Kita diminta membaca dunia biar makin kenal sama Zat yang nulis semua ceritanya, biar rasa penasaran kita nyambungin fenomena kecil di sekitar sama kebesaran Penciptanya.</p>
+
+        <div class="box-worksheet">
+            <h2>Lembar Refleksi: "The Power of Iqra"</h2>
+            <p style="font-size: 0.9rem; color: #4A3728; margin-bottom: 20px;">Yuk, isi refleksi ini pelan-pelan sebelum kelas dimulai, biar diskusi kita nanti lebih dalam.</p>
+
+            <div class="group-field">
+                <label class="label-title">1. Cek Tradisi Warisan</label>
+                <p class="text-hint">Kapan terakhir kamu nolak masukan atau kebenaran cuma karena ngerasa "ah dari dulu aku emang gini"? Tulis satu kejadiannya.</p>
+                <textarea placeholder="Tulis di sini..."></textarea>
+            </div>
+
+            <div class="group-field">
+                <label class="label-title">2. Audit Jari Sendiri</label>
+                <p class="text-hint">Inget-inget satu konten terakhir yang kamu share. Kamu verifikasi dulu, atau nge-share karena kena di emosi? Jujur aja sama diri sendiri.</p>
+                <textarea placeholder="Tulis di sini..."></textarea>
+            </div>
+
+            <div class="group-field">
+                <label class="label-title">3. Iqra Minggu Ini</label>
+                <p class="text-hint">Pilih satu hal kecil di sekitarmu (fenomena alam atau kebiasaan sosial) yang mau kamu amatin minggu ini. Apa yang pengen kamu pahami lebih dalam darinya buat makin kenal sama Sang Pencipta?</p>
+                <textarea placeholder="Tulis di sini..."></textarea>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
