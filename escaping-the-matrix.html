@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Materi Pra-Kelas QSC</title>
+    <link rel="icon" type="image/png" href="qsc-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #717b5e;
+            color: #F9F9F6;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            color: #ffead1;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.6rem;
+            color: #ffead1;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #ffead1;
+            border-left: 4px solid #ffead1;
+            padding-left: 16px;
+            margin: 16px 0 28px;
+        }
+
+        .ayah-ref {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 0.82rem;
+            letter-spacing: 0.5px;
+            color: #ffead1;
+            opacity: 0.85;
+            margin-top: 10px;
+        }
+
+        .arabic {
+            font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', Georgia, serif;
+            font-size: 1.7rem;
+            line-height: 2.1;
+            direction: rtl;
+            text-align: right;
+            color: #ffead1;
+            margin-bottom: 4px;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #acb59a;
+            margin: 40px 0;
+            opacity: 0.7;
+        }
+
+        .diagram-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        @media (min-width: 480px) {
+            .diagram-row.split {
+                flex-direction: row;
+            }
+            .diagram-row.split .card {
+                flex: 1;
+            }
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            color: #ffffff;
+            border: 1.5px solid rgba(249, 249, 246, 0.25);
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+
+        .emerald { background-color: #2E3326; }
+        .paprika { background-color: #ab875f; }
+        .midnight { background-color: #2E3326; }
+        .gold { background-color: #acb59a; color: #2E3326; }
+        .cocoa { background-color: #4A3728; }
+
+        .arrow {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #ffead1;
+            margin: 2px 0;
+            font-weight: bold;
+        }
+
+        .callout {
+            background-color: #ffffff;
+            border-left: 4px solid #717b5e;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin: 24px 0;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            color: #2E3326;
+        }
+
+        .callout p { margin-bottom: 0; font-size: 0.98rem; }
+
+        .box-worksheet {
+            background-color: #ffead1;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            margin-top: 40px;
+        }
+
+        .box-worksheet h2 {
+            color: #2E3326;
+            margin-top: 0;
+        }
+
+        .group-field {
+            margin-bottom: 20px;
+        }
+
+        .label-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #4A3728;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .text-hint {
+            font-size: 0.88rem;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+
+        .references {
+            margin-top: 40px;
+        }
+
+        .references h2 {
+            font-size: 1.1rem;
+        }
+
+        .references ul {
+            padding-left: 20px;
+        }
+
+        .references li {
+            font-size: 0.88rem;
+            opacity: 0.85;
+            margin-bottom: 10px;
+        }
+
+        .references a {
+            color: #ffead1;
+            text-decoration: underline;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 90px;
+            padding: 12px;
+            border: 2px solid #acb59a;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #2E3326;
+            background-color: #F9F9F6;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #4A3728;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Escaping the Matrix: Apa sih yang kita kejar?</h1>
+
+        <p>Coba jawab jujur: lo lagi ngejar apa sekarang? Naikin pemasukan, followers nambah, badan lebih bagus, nikah, punya rumah sendiri? Coba jawab lagi kalau semua itu udah kecapai, terus ngejar apa? Kebanyakan dari kita nggak punya jawaban pasti, cuma tau harus terus lari, dari satu target ke target berikutnya, tanpa sempet mikir ini semua sebenernya menuju ke mana.</p>
+
+        <p>Di film <em>The Matrix</em>, orang hidup di dunia yang keliatan nyata banget, padahal itu cuma tampilan yang bikin mereka betah dan nggak pengen bangun. Al-Qur'an ternyata punya satu istilah yang mirip banget buat ngegambarin dunia sekaligus apa yang bikin kita terus ngejar tanpa arah: <em>mata'ul ghurur</em>, kesenangan yang menipu.</p>
+
+        <p>Nah, di sesi <strong>"Escaping the Matrix"</strong> nanti kita bakal bahas ini bareng mentor kita, pawstad🐾 Bijak Ramadhan. Sebagai pemanasan, yuk kita baca pelan-pelan satu bagian dari <strong>QS. Al-Hadid ayat 16 sampai 25</strong>. Anggap aja ini tombol buat mulai bangun.</p>
+
+        <hr>
+
+        <h2>Kenalan Dulu sama Surah Al-Hadid</h2>
+
+        <p>Surah Al-Hadid yg berarti "Besi" adalah surah ke-94 di Al-Quran. surah ini turun di Madinah dan punya 29 ayat. Nama surahnya diambil dari ayat 25 nanti. Isinya kayak satu ajakan besar buat orang beriman: lembutin lagi hatinya, longgarin genggaman ke harta lewat sedekah, dan berani berdiri tegak buat kebenaran.</p>
+
+        <p>Tiga hal itu keliatannya beda-beda, tapi sebenarnya satu paket. Dan bagian yang mau kita baca ini, ayat 16 sampai 25, jalan ceritanya rapi banget dari "hati yang mulai keras" sampai ke "kekuatan untuk berbuat baik".</p>
+
+        <h2>Ayat 16: Alarm yang Lembut</h2>
+
+        <p class="arabic" lang="ar" dir="rtl" translate="no">أَلَمْ يَأْنِ لِلَّذِينَ ءَامَنُوٓا۟ أَن تَخْشَعَ قُلُوبُهُمْ لِذِكْرِ ٱللَّهِ</p>
+        <blockquote>
+            "Belumkah tiba waktunya bagi orang-orang yang beriman untuk secara khusyuk mengingat Allah dan mematuhi kebenaran yang telah turun (kepada mereka)...?"
+            <span class="ayah-ref">QS. Al-Hadid: 16</span>
+        </blockquote>
+
+        <p>Ada satu cerita yang bikin ayat ini kena banget. Dalam riwayat Sahih Muslim, Ibnu Mas'ud radhiyallahu 'anhu bilang kalau jarak antara para sahabat masuk Islam sama turunnya ayat ini cuma sekitar empat tahun. Empat tahun, dan Allah udah menegur lembut: "belum sampai juga waktunya hati kalian tunduk?"</p>
+
+        <p>Kalau sahabat yang kualitas imannya sekelas itu aja dapet teguran ini, kita yang hatinya gampang teralihin sama notifikasi jelas lebih butuh diingatkan. Ayat ini juga ngasih peringatan: jangan sampai kita kayak umat sebelumnya, yang gara-gara kelamaan hidup tanpa perawatan iman, hatinya lama-lama mengeras. Waktu itu bisa bikin hati mati rasa kalau dibiarin.</p>
+
+        <h2>Ayat 17 sampai 19: Kabar Baiknya, Hati Bisa Hidup Lagi</h2>
+
+        <p>Coba perhatiin, tepat setelah ngomongin hati yang keras, Allah nggak bikin kita putus asa. Malah dikasih perumpamaan yang nenangin:</p>
+
+        <p class="arabic" lang="ar" dir="rtl" translate="no">ٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ يُحْىِ ٱلْأَرْضَ بَعْدَ مَوْتِهَا</p>
+        <blockquote>
+            "Ketahuilah bahwa Allah menghidupkan bumi setelah kematiannya (kekeringannya)..."
+            <span class="ayah-ref">QS. Al-Hadid: 17</span>
+        </blockquote>
+
+        <p>Tanah yang keliatan mati dan gersang bisa ijo lagi begitu kena hujan. Hati kamu juga gitu. Sekeras atau senumb apa pun rasanya sekarang, dia masih bisa hidup lagi. Nggak ada yang terlalu telat.</p>
+
+        <p>Terus di ayat 18 dan 19, Allah kasih salah satu cara ngidupin hati: lewat memberi. Orang yang bersedekah dan "meminjamkan kepada Allah pinjaman yang baik" (<em>qardhan hasana</em>) dijanjiin balasan yang dilipatgandakan, dan orang beriman disebut sederet sama para <em>shiddiqin</em> dan <em>syuhada</em>. Ngasih itu bukan cuma soal transfer duit, tapi latihan buat ngelonggarin genggaman kita ke dunia.</p>
+
+        <h2>Ayat 20: Tombol "Lihat Aslinya"</h2>
+
+        <p>Ini ayat inti dari bagian kita. Di sini Allah kasih bocoran isi "matrix"-nya secara terang-terangan:</p>
+
+        <p class="arabic" lang="ar" dir="rtl" translate="no">ٱعْلَمُوٓا۟ أَنَّمَا ٱلْحَيَوٰةُ ٱلدُّنْيَا لَعِبٌ وَلَهْوٌ وَزِينَةٌ وَتَفَاخُرٌۢ بَيْنَكُمْ وَتَكَاثُرٌ فِى ٱلْأَمْوَٰلِ وَٱلْأَوْلَـٰدِ</p>
+        <blockquote>
+            "Ketahuilah bahwa kehidupan dunia itu hanyalah permainan, senda gurau, perhiasan, saling berbangga di antara kamu, serta berlomba dalam memperbanyak harta dan anak..."
+            <span class="ayah-ref">QS. Al-Hadid: 20</span>
+        </blockquote>
+
+        <p>Menarik banget, menurut Ibnu 'Asyur dalam <em>At-Tahrir wat-Tanwir</em> dan juga Imam Al-Qurthubi, lima kata yang Allah sebut ini bukan cuma daftar acak. Kelimanya kayak fase umur yang kita lewatin satu per satu:</p>
+
+        <div class="diagram-row">
+            <div class="card paprika">
+                <h3>1. La'ib (Main)</h3>
+                <p>Fase anak kecil. Dunia terasa kayak mainan. Rebutan yang pas gede keliatan sepele, tapi waktu itu berasa segalanya.</p>
+            </div>
+            <div class="arrow">&#9660;</div>
+            <div class="card midnight">
+                <h3>2. Lahw (Hiburan)</h3>
+                <p>Fase remaja. Cari having fun, hobi, hal-hal seru yang bikin lupa waktu.</p>
+            </div>
+            <div class="arrow">&#9660;</div>
+            <div class="card cocoa">
+                <h3>3. Zinah (Tampilan)</h3>
+                <p>Fase muda. Mulai sibuk sama penampilan, outfit, glow-up, pengen keliatan bagus di mata orang.</p>
+            </div>
+            <div class="arrow">&#9660;</div>
+            <div class="card emerald">
+                <h3>4. Tafakhur (Pamer)</h3>
+                <p>Fase dewasa. Adu pencapaian sama circle, flexing pelan-pelan, pengen keliatan lebih dari yang lain.</p>
+            </div>
+            <div class="arrow">&#9660;</div>
+            <div class="card gold">
+                <h3>5. Takasur (Numpuk)</h3>
+                <p>Fase tua. Sibuk ngumpulin harta dan keturunan sebanyak-banyaknya sebagai penanda "berhasil".</p>
+            </div>
+        </div>
+
+        <div class="callout">
+            <p>Polanya sama di tiap fase. Pas lagi di dalamnya, hal itu berasa jadi tujuan hidup. Pas udah lewat, kita baru sadar itu cuma level yang akhirnya ditinggalin. Psikolog nyebut ini <strong>arrival fallacy</strong>: kita dapet target, seneng sebentar, terus haus lagi sama target berikutnya, dan siklusnya nggak pernah berhenti sendiri.</p>
+        </div>
+
+        <p>Habis itu Allah kasih perumpamaan tanaman: hujan turun, tanamannya tumbuh subur sampai bikin petani kagum, terus mulai menguning, terus jadi jerami kering (<em>hutam</em>). Kata Ibnu Katsir, itu persis siklus manusia: muda dan kuat, lalu menua, lalu rapuh. Yang tadinya keliatan paling hidup dan hijau justru yang paling cepat layu.</p>
+
+        <p>Makanya ayat ini nutup dunia dengan sebutan <em>mata'ul ghurur</em>, kesenangan yang menipu. Tapi ini bukan berarti dunia itu jahat dan harus dibenci. Imam As-Sa'di ngasih pembeda yang halus: orang yang paham hakikat dunia bakal jadiin dunia sebagai <strong>jembatan</strong> (<em>ma'bar</em>), bukan sebagai <strong>rumah permanen</strong> (<em>mustaqarr</em>). Jembatan tetap dilewatin dan boleh dinikmatin, cuma nggak dijadiin tempat berhenti.</p>
+
+        <h2>Ayat 21 sampai 23: Terus Arahnya ke Mana?</h2>
+
+        <p>Setelah "dicabut" dari ilusi, kita nggak dibiarin bengong tanpa arah. Allah langsung kasih tujuan baru:</p>
+
+        <p class="arabic" lang="ar" dir="rtl" translate="no">سَابِقُوٓا۟ إِلَىٰ مَغْفِرَةٍ مِّن رَّبِّكُمْ وَجَنَّةٍ عَرْضُهَا كَعَرْضِ ٱلسَّمَآءِ وَٱلْأَرْضِ</p>
+        <blockquote>
+            "Berlomba-lombalah kamu menuju ampunan dari Tuhanmu dan surga yang luasnya seluas langit dan bumi..."
+            <span class="ayah-ref">QS. Al-Hadid: 21</span>
+        </blockquote>
+
+        <p>Lombanya nggak dihapus, cuma dipindah arahnya. Yang dulu adu banyak-banyakan harta, sekarang diganti jadi adu cepat menuju ampunan Allah. Finish line-nya beda, hadiahnya juga beda kelas.</p>
+
+        <div class="callout">
+            <p>Di ayat 22 dan 23, Allah kasih obat buat penyakit yang paling sering nyerang kita di timeline: <em>overthinking</em> soal untung-rugi. Apa pun yang hilang atau datang ke kita ternyata udah tertulis sebelum kejadian. Gunanya apa? Biar kita nggak terlalu hancur pas kehilangan, dan nggak terlalu jumawa pas lagi dapet. Kata As-Sa'di, pas lihat orang lain sibuk pamer harta, orang yang sadar malah milih "balas" dengan memperbanyak amal.</p>
+        </div>
+
+        <h2>Jadi, Kenapa Namanya "Besi"?</h2>
+
+        <p>Sampailah kita di ayat 25, tempat surah ini dapet namanya:</p>
+
+        <p class="arabic" lang="ar" dir="rtl" translate="no">وَأَنزَلْنَا ٱلْحَدِيدَ فِيهِ بَأْسٌ شَدِيدٌ وَمَنَـٰفِعُ لِلنَّاسِ</p>
+        <blockquote>
+            "...Dan Kami menurunkan besi yang padanya terdapat kekuatan yang besar dan berbagai manfaat bagi manusia..."
+            <span class="ayah-ref">QS. Al-Hadid: 25</span>
+        </blockquote>
+
+        <p>Di ayat ini Allah sebut tiga hal yang diturunkan bareng para rasul: <em>Kitab</em> (petunjuk), <em>Mizan</em> (timbangan keadilan), dan <em>Al-Hadid</em> alias besi (kekuatan sekaligus manfaat). Besi itu bahan buat bikin alat kerja, sekaligus bahan buat bikin alat yang menjaga kebenaran. Simbol kekuatan buat berdiri tegak.</p>
+
+        <p>Kalau ditarik dari awal, surah ini sebenarnya lagi ngerakit dua hal dalam diri kita:</p>
+
+        <div class="diagram-row split">
+            <div class="card emerald">
+                <h3>Hati yang Lembut</h3>
+                <p>Dari ayat 16. Peka, gampang tersentuh sama kebenaran, nggak keras dan mati rasa.</p>
+            </div>
+            <div class="card cocoa">
+                <h3>Kemauan Sekeras Besi</h3>
+                <p>Dari ayat 25. Berani ngasih, berani berdiri buat keadilan, nggak lembek pas harus milih yang bener.</p>
+            </div>
+        </div>
+
+        <p><em>Escaping the matrix</em> nggak berhenti pas kita sadar dunia ini cuma tampilan. Pertanyaan lanjutannya justru lebih penting: habis sadar, terus ngapain? Jawaban surah Al-Hadid kira-kira begini: rawat hatinya biar lembut lagi, longgarin genggamannya ke dunia, terus gerak pakai kekuatan buat hal-hal yang beneran kekal.</p>
+
+        <hr>
+
+        <div class="box-worksheet">
+            <h2>&#128374; Lembar Refleksi: "Escaping the Matrix"</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Isi pelan-pelan sebelum kelas dimulai, biar diskusi kita nanti bisa lebih dalam.</p>
+
+            <form>
+                <div class="group-field">
+                    <label class="label-title">1. Cek "Kerasnya" Hati (Ayat 16)</label>
+                    <div class="text-hint">Kapan terakhir kali kamu ngerasa hatimu bener-bener tersentuh pas ingat Allah atau baca Qur'an? Kira-kira apa yang belakangan ini bikin hatimu terasa numb?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">2. Longgarkan Genggaman (Ayat 18)</label>
+                    <div class="text-hint">Satu hal (harta, waktu, atau tenaga) apa yang bisa kamu kasih ke orang lain minggu ini, tanpa ngarep balik apa-apa?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">3. Pindahkan Lombanya (Ayat 21)</label>
+                    <div class="text-hint">Satu "flex" atau target dunia apa yang selama ini kamu kejar? Dan satu amal kecil apa yang bisa jadi lomba baru kamu minggu ini?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="references">
+            <h2>Referensi</h2>
+            <ul>
+                <li>HR. Muslim, no. 3027 &mdash; riwayat Ibnu Mas'ud radhiyallahu 'anhu tentang jarak antara masuk Islamnya para sahabat dan turunnya QS. Al-Hadid: 16. <a href="https://sunnah.com/muslim:3027" target="_blank" rel="noopener">ref</a></li>
+                <li>Ibnu 'Asyur, <em>At-Tahrir wat-Tanwir</em>, tafsir QS. Al-Hadid: 20. <a href="https://quran.com/al-hadid/20/tafsirs/arabic-tanweer-tafseer" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+                <li>Al-Qurthubi, <em>Tafsir Al-Qurthubi</em>, QS. Al-Hadid: 20. <a href="https://quran.com/al-hadid/20/tafsirs/ar-tafseer-al-qurtubi" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+                <li>Ibnu Katsir, <em>Tafsir Ibnu Katsir</em>, QS. Al-Hadid: 20. <a href="https://quran.com/al-hadid/20/tafsirs/ar-tafsir-ibn-kathir" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+                <li>As-Sa'di, <em>Tafsir As-Sa'di</em>, QS. Al-Hadid: 20. <a href="https://quran.com/al-hadid/20/tafsirs/ar-tafseer-al-saddi" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+                <li>As-Sa'di, <em>Tafsir As-Sa'di</em>, QS. Al-Hadid: 22&ndash;23. <a href="https://quran.com/al-hadid/22/tafsirs/ar-tafseer-al-saddi" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

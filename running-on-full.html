@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Materi Pra-Kelas QSC</title>
+    <link rel="icon" type="image/png" href="qsc-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #717b5e;
+            color: #F9F9F6;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            color: #ffead1;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.6rem;
+            color: #ffead1;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #ffead1;
+            border-left: 4px solid #ffead1;
+            padding-left: 16px;
+            margin: 16px 0 28px;
+        }
+
+        .ayah-ref {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 0.82rem;
+            letter-spacing: 0.5px;
+            color: #ffead1;
+            opacity: 0.85;
+            margin-top: 10px;
+        }
+
+        .arabic {
+            font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', Georgia, serif;
+            font-size: 1.7rem;
+            line-height: 2.1;
+            direction: rtl;
+            text-align: right;
+            color: #ffead1;
+            margin-bottom: 4px;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #acb59a;
+            margin: 40px 0;
+            opacity: 0.7;
+        }
+
+        .diagram-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        @media (min-width: 480px) {
+            .diagram-row.split {
+                flex-direction: row;
+            }
+            .diagram-row.split .card {
+                flex: 1;
+            }
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            color: #ffffff;
+            border: 1.5px solid rgba(249, 249, 246, 0.25);
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+
+        .emerald { background-color: #2E3326; }
+        .paprika { background-color: #ab875f; }
+        .midnight { background-color: #2E3326; }
+        .gold { background-color: #acb59a; color: #2E3326; }
+        .cocoa { background-color: #4A3728; }
+
+        .arrow {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #ffead1;
+            margin: 2px 0;
+            font-weight: bold;
+        }
+
+        .callout {
+            background-color: #ffffff;
+            border-left: 4px solid #717b5e;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin: 24px 0;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            color: #2E3326;
+        }
+
+        .callout p { margin-bottom: 0; font-size: 0.98rem; }
+
+        .box-worksheet {
+            background-color: #ffead1;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            margin-top: 40px;
+        }
+
+        .box-worksheet h2 {
+            color: #2E3326;
+            margin-top: 0;
+        }
+
+        .group-field {
+            margin-bottom: 20px;
+        }
+
+        .label-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #4A3728;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .text-hint {
+            font-size: 0.88rem;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+
+        .references {
+            margin-top: 40px;
+        }
+
+        .references h2 {
+            font-size: 1.1rem;
+        }
+
+        .references ul {
+            padding-left: 20px;
+        }
+
+        .references li {
+            font-size: 0.88rem;
+            opacity: 0.85;
+            margin-bottom: 10px;
+        }
+
+        .references a {
+            color: #ffead1;
+            text-decoration: underline;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 90px;
+            padding: 12px;
+            border: 2px solid #acb59a;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #2E3326;
+            background-color: #F9F9F6;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #4A3728;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Running on Full: Kerja Keras yang Lahir dari Rasa Cukup</h1>
+
+        <p>Kebanyakan dari kita banting tulang jumpalitan tiap hari itu karena ngerasa kurang. Kurang duit, kurang diakui, kurang pencapaian dibanding temen seangkatan. Jadi kita kejar terus, biar suatu hari nanti ngerasa "cukup" dan akhirnya bisa tenang.</p>
+
+        <p>Nah, syukur biasanya kita taruh di ujung. Nanti kalau udah sampai, baru deh bersyukur. Cukup jadi caption "alhamdulillah" di bawah foto wisuda, conference, kantor baru, atau liburan. Abis itu balik lagi nge-<i>grind</i> ditemenin promag.</p>
+
+        <p>Di sesi <strong>"Running on Full"</strong> nanti, kita bahas bareng mentor kita Annida gimana syukur sebenernya bisa lebih dari sekadar perasaan yang muncul setelah kita dapet sesuatu. Sebagai pemanasan, kita baca dulu pelan-pelan <strong>QS. Saba ayat 10 sampai 19</strong>, tempat ada dua keluarga yang sama-sama dikasih nikmat gede tapi respon-nya beda banget.</p>
+
+        <hr>
+
+        <h2>Kenalan Dulu Sama Surah Saba</h2>
+
+        <p>Surah Saba itu Makkiyah, surah ke-34, punya 54 ayat. Namanya diambil dari sebuah kerajaan tua yang kaya raya di Yaman, kaum Saba, yang nanti ceritanya kita baca sendiri di ayat 15. Menariknya, surah ini dibuka dengan kata "Alhamdulillah", segala puji buat Allah.</p>
+
+        <p>Kata Imam As-Sa'di, pujian itu ditujukan ke Allah karena semua yang ada di langit dan bumi itu milik-Nya. Jadi dari ayat pertama, surah ini udah masang tema besarnya: semua nikmat asalnya dari Allah, dan yang jadi pertanyaan adalah gimana manusia ngerespon nikmat itu. Bagian yang kita baca ini kasih dua contoh respon yang beda.</p>
+
+        <h2>Ayat 10 sampai 13: Keluarga yang Dikasih Nyaris Segalanya</h2>
+
+        <p>Allah cerita soal Nabi Dawud dan anaknya, Nabi Sulaiman. Fasilitas mereka bukan main. Buat Dawud AS, besi dilunakin di tangannya sampai bisa dibentuk kayak adonan, dan gunung sama burung diperintah ikut bertasbih bareng beliau.</p>
+
+        <p class="arabic" lang="ar" dir="rtl" translate="no">وَلَقَدْ ءَاتَيْنَا دَاوُۥدَ مِنَّا فَضْلًا ۖ يَـٰجِبَالُ أَوِّبِى مَعَهُۥ وَٱلطَّيْرَ ۖ وَأَلَنَّا لَهُ ٱلْحَدِيدَ</p>
+        <blockquote>
+            "Sungguh, telah Kami berikan kepada Dawud karunia dari Kami. (Kami berfirman), 'Wahai gunung-gunung dan burung-burung, bertasbihlah berulang-ulang bersama Dawud,' dan Kami lunakkan besi untuknya."
+            <span class="ayah-ref">QS. Saba: 10</span>
+        </blockquote>
+
+        <p>Buat Sulaiman AS lebih gila lagi. Angin ditundukin buat beliau, sekali jalan setara perjalanan sebulan, jadi jaraknya yang jauh banget kelar dalam waktu singkat. Tembaga cair dialirkan, dan bangsa jin dipekerjakan bangun mihrab, patung, sampai panci raksasa segede kolam. Kata As-Sa'di, semua ini nikmat khusus yang belum pernah dikasih ke siapa pun sebelumnya.</p>
+
+        <p>Nah, di tengah tumpukan nikmat itu, turun satu perintah yang jadi jantung bahasan kelas kita nanti:</p>
+
+        <p class="arabic" lang="ar" dir="rtl" translate="no">ٱعْمَلُوٓا۟ ءَالَ دَاوُۥدَ شُكْرًا ۚ وَقَلِيلٌ مِّنْ عِبَادِىَ ٱلشَّكُورُ</p>
+        <blockquote>
+            "Bekerjalah, hai keluarga Dawud, untuk bersyukur (kepada Allah). Dan sedikit sekali dari hamba-hamba-Ku yang bersyukur."
+            <span class="ayah-ref">QS. Saba: 13</span>
+        </blockquote>
+
+        <p>Perhatiin, kata perintahnya "bekerjalah", sebuah kata kerja, dan syukur ditaruh sebagai tujuannya. Menariknya lagi, perintah ini datang pas mereka udah punya segalanya, bukan pas lagi kekurangan. Kenapa syukur bisa berupa kerjaan dan gimana bentuknya, ini yang bakal kita kupas lebih dalam bareng di kelas. Buat sekarang, cukup pegang dulu satu hal: syukur di sini ada wujud geraknya.</p>
+
+        <h2>Ayat 14: Pas Raja Sehebat Itu Wafat</h2>
+
+        <p>Sebelum lanjut ke kaum Saba, ada satu selipan cerita yang bikin merinding. Nabi Sulaiman wafat dalam posisi bersandar di tongkatnya. Dan cara Allah nunjukin kematian beliau ke bangsa jin itu unik banget:</p>
+
+        <p class="arabic" lang="ar" dir="rtl" translate="no">مَا دَلَّهُمْ عَلَىٰ مَوْتِهِۦٓ إِلَّا دَآبَّةُ ٱلْأَرْضِ تَأْكُلُ مِنسَأَتَهُۥ</p>
+        <blockquote>
+            "...Tidak ada yang menunjukkan kepada mereka kematiannya itu kecuali rayap yang memakan tongkatnya..."
+            <span class="ayah-ref">QS. Saba: 14</span>
+        </blockquote>
+
+        <p>Kata As-Sa'di, waktu itu bangsa jin sempat ngeklaim ke manusia kalau mereka tahu hal-hal gaib. Allah mau nunjukin klaim itu bohong. Jadi jin terus kerja berat kayak biasa, ngira Sulaiman masih hidup ngawasin mereka, padahal beliau udah wafat. Baru setelah rayap makan tongkatnya sampai patah dan jasadnya tersungkur, ketahuan kalau beliau udah lama tiada. Andai jin beneran tahu gaib, mereka pasti berhenti dari kerja berat itu jauh-jauh hari.</p>
+
+        <p>Selipan ini ngingetin satu hal yang gampang kita lupa: sehebat apa pun nikmat dan kekuasaan yang dikasih, semuanya ada batasnya dan bakal ditinggal. Yang bikin beda antara satu orang sama yang lain ternyata apa yang dia lakuin selama nikmat itu masih dipegang, seberapa pun besar nikmat yang dikasih.</p>
+
+        <h2>Ayat 15 sampai 19: Tetangga yang Milih Berpaling</h2>
+
+        <p>Sekarang giliran kaum Saba. Mereka juga dikasih nikmat yang bikin ngiler: dua kebun luas ngapit kanan-kiri, hasil bumi melimpah, dan perjalanan antar kota yang aman dan gampang. Perintah buat mereka pun mirip banget sama keluarga Dawud:</p>
+
+        <p class="arabic" lang="ar" dir="rtl" translate="no">كُلُوا۟ مِن رِّزْقِ رَبِّكُمْ وَٱشْكُرُوا۟ لَهُۥ ۚ بَلْدَةٌ طَيِّبَةٌ وَرَبٌّ غَفُورٌ</p>
+        <blockquote>
+            "...Makanlah dari rezeki Tuhanmu dan bersyukurlah kepada-Nya. (Negerimu) adalah negeri yang baik, dan (Tuhanmu) adalah Tuhan Yang Maha Pengampun."
+            <span class="ayah-ref">QS. Saba: 15</span>
+        </blockquote>
+
+        <p>Tapi respon mereka beda arah. Kata As-Sa'di, mereka malah berpaling dari Sang Pemberi nikmat, bosan sama kenikmatan yang udah dikasih, sampai kelewatan banget: mereka justru minta biar jarak perjalanan antar kota mereka dibikin jauh dan susah. Nikmat kemudahan yang tadinya bikin hidup enak malah mereka anggap membosankan.</p>
+
+        <p>Ujungnya, Allah kirim <em>Sail al-Arim</em>, banjir besar yang jebolin bendungan dan ngerusak kebun-kebun mereka. Dua kebun subur tadi berubah jadi pohon-pohon berbuah pahit. Kerajaan yang dulu makmur itu cerai-berai sampai cuma tinggal jadi bahan cerita orang. Nikmat yang nggak disyukuri ternyata nggak otomatis nempel selamanya.</p>
+
+        <div class="diagram-row split">
+            <div class="card emerald">
+                <h3>Keluarga Dawud</h3>
+                <p>Dikasih besi lunak, angin, dan pasukan jin. Responnya: kerja sebagai bentuk syukur. Nikmatnya jadi jalan buat makin taat.</p>
+            </div>
+            <div class="card cocoa">
+                <h3>Kaum Saba</h3>
+                <p>Dikasih dua kebun subur dan hidup aman. Responnya: bosan dan berpaling. Nikmatnya dicabut lewat banjir besar.</p>
+            </div>
+        </div>
+
+        <div class="callout">
+            <p>Dua-duanya dikasih banyak, bedanya cuma di cara ngerespon. Nggak heran kalau ayat 13 nutup dengan kalimat "dan sedikit sekali dari hamba-hamba-Ku yang bersyukur", lalu di ujung kisah Saba (ayat 19) Allah bilang pelajaran ini kena banget buat orang yang <em>sabbaar syakuur</em>, yang sabar lagi banyak bersyukur. Syukur ternyata bukan pelengkap, tapi poros yang nentuin arah. Nah, seperti apa syukur yang aktif itu dalam keseharian kita, itu yang bakal kita obrolin di kelas.</p>
+        </div>
+
+        <hr>
+
+        <div class="box-worksheet">
+            <h2>&#128296; Lembar Refleksi: "Running on Full"</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Isi pelan-pelan sebelum kelas dimulai, biar diskusi kita nanti lebih dalam.</p>
+
+            <form>
+                <div class="group-field">
+                    <label class="label-title">1. Nikmat yang Udah Kerasa "Biasa"</label>
+                    <div class="text-hint">Kaum Saba bosan sama nikmatnya sampai lupa itu pemberian. Sebutin satu nikmat yang kamu punya tapi udah kerasa terlalu biasa buat disyukurin.</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">2. Selama Ini Kamu Respon Gimana?</label>
+                    <div class="text-hint">Coba jujur, respon kamu ke nikmat itu selama ini lebih mirip keluarga Dawud (dipakai buat kebaikan) atau kaum Saba (dinikmatin doang, lama-lama diabaikan)?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+
+                <div class="group-field">
+                    <label class="label-title">3. Satu Langkah Kecil Minggu Ini</label>
+                    <div class="text-hint">Ambil nikmat dari nomor 1. Satu perbuatan kecil apa yang bisa kamu lakuin minggu ini sebagai cara bilang makasih atas nikmat itu?</div>
+                    <textarea placeholder="Tulis di sini..."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="references">
+            <h2>Referensi</h2>
+            <ul>
+                <li>As-Sa'di, <em>Tafsir As-Sa'di</em>, QS. Saba: 1 &mdash; surah dibuka dengan pujian karena segala isi langit dan bumi milik Allah.
+                    <a href="https://quran.com/saba/1/tafsirs/ar-tafseer-al-saddi" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+                <li>As-Sa'di, <em>Tafsir As-Sa'di</em>, QS. Saba: 13 &mdash; nikmat khusus untuk Dawud dan Sulaiman serta perintah bersyukur.
+                    <a href="https://quran.com/saba/13/tafsirs/ar-tafseer-al-saddi" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+                <li>Ibnu Katsir, <em>Tafsir Ibnu Katsir</em>, QS. Saba: 13 &mdash; keterangan bahwa syukur juga bisa lewat perbuatan.
+                    <a href="https://quran.com/saba/13/tafsirs/ar-tafsir-ibn-kathir" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+                <li>As-Sa'di, <em>Tafsir As-Sa'di</em>, QS. Saba: 14 &mdash; kisah wafatnya Sulaiman dan terbongkarnya klaim jin soal ilmu gaib.
+                    <a href="https://quran.com/saba/14/tafsirs/ar-tafseer-al-saddi" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+                <li>As-Sa'di, <em>Tafsir As-Sa'di</em>, QS. Saba: 15&ndash;19 &mdash; nikmat kaum Saba, sikap berpaling mereka, dan datangnya Sail al-Arim.
+                    <a href="https://quran.com/saba/15/tafsirs/ar-tafseer-al-saddi" target="_blank" rel="noopener">Baca di Quran.com</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
